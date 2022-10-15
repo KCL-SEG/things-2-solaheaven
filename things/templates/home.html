@@ -3,10 +3,12 @@
   <title>Things</title>
 </head>
 <body>
-  <h1>
-    Things
-  </h1>
+  <h1>Things</h1>
   <p>This is the start of Things app!</p>
   <p><a href="thing_form.html">Start</a></p>
+  <form action = "thing_form/" method = "post"></form>
+  {% csrf_token %}
+  {{form.as_p}}
+  <input type = "submit" value = "Submit">
 </body>
 </html>
